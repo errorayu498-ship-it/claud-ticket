@@ -99,7 +99,7 @@ async function registerCommands() {
         option
           .setName('category')
           .setDescription('Category channel')
-          .setRequired(true)
+          .setRequired(false)
       ),
 
     new SlashCommandBuilder()
