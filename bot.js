@@ -251,7 +251,7 @@ async function handleCreatePanelCommand(interaction) {
 
   const panelChannel = interaction.options.getChannel('channel');
   const ticketType = interaction.options.getString('type');
-  const category = interaction.options.getChannel('category');
+  const category = interaction.options.get('category');
 
   let settings = await Settings.findOne({
     guildId: interaction.guildId
